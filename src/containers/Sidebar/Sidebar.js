@@ -12,6 +12,7 @@ class Sidebar extends Component {
             <div className="col-md-1">
                 <PillButton 
                     text="Compose"
+                    color="blue"
                 />
                 
                 <ul>
