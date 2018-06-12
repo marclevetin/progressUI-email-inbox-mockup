@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import PillButton from "../../components/PillButton";
+import './EmailDetail.css'
 
 class EmailDetail extends Component {
   state = {};
@@ -8,7 +9,7 @@ class EmailDetail extends Component {
   render() {
     return (
       <div className="col-md-7">
-        <div className="page-title-container">
+        <div className="page-title-container container-adjust">
           <div className="grid-half">
             <div className="row no-padding">
               <div className="col-md-8">
