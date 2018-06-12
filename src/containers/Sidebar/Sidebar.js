@@ -7,8 +7,22 @@ class Sidebar extends Component {
 
     render () {
         return(
-            <div>
-                This is the Sidebar
+            <div className="col-md-1">
+                <p>Compose button</p>
+                
+                <ul>
+                    <li>Inbox</li>
+                    <li>Important</li>
+                    <li>Sent</li>
+                    <li>Draft</li>
+                    <li>Trash</li>
+                </ul>
+                <p>Labels</p>
+                <ul>
+                    <li>Personal</li>
+                    <li>Work</li>
+                    <li>Travel</li>
+                </ul>
             </div>
         )
     }
