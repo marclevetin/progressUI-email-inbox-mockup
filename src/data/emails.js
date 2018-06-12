@@ -1,102 +1,144 @@
 const emails = [
-    {
-      "_id": "5b1ff885577a83f4d2123f0c",
-      "index": 0,
-      "name": "Jeannette Blackburn",
-      "picture": "http://placehold.it/32x32",
-      "title": "cupidatat ut elit laboris minim ea eu id laborum ad",
-      "message": "Elit labore irure nostrud amet est incididunt sint ullamco. Tempor sunt ex occaecat elit nisi magna adipisicing nostrud aliqua in in aliquip quis consectetur. Mollit in elit ex fugiat ex reprehenderit sint ut labore anim nisi ea. Est elit sint irure commodo velit elit consequat ipsum ullamco.\r\nEst eu culpa Lorem ipsum nulla sunt duis magna aute tempor. Nisi enim labore do esse minim duis ex aliqua voluptate. Do qui quis qui magna consequat eu excepteur in exercitation aliqua reprehenderit.\r\nUt est minim laborum deserunt dolor velit laboris quis. Enim laborum cupidatat eu reprehenderit deserunt duis in aliqua veniam amet. Occaecat ut labore adipisicing pariatur deserunt reprehenderit do consectetur ea. Ex non nisi incididunt eu aute laborum commodo cillum sunt aliquip irure velit labore ad. Qui magna excepteur ut ea culpa anim commodo ipsum nulla anim.\r\n",
-      "dateSent": "2015-03-09T09:46:26 +04:00",
-      "tags": [
-        "Work"
-      ],
-      "isUnread": true,
-      "isImportant": true,
-      "isDraft": false,
-      "isTrash": false
-    },
-    {
-      "_id": "5b1ff8853ac4f39c38eb66a9",
-      "index": 1,
-      "name": "Gonzalez Garrison",
-      "picture": "http://placehold.it/32x32",
-      "title": "ullamco consectetur est culpa dolore esse enim eu consectetur amet",
-      "message": "Consequat magna in veniam excepteur consequat cillum cillum eiusmod voluptate aliqua sint. Aliquip amet in velit ullamco consectetur amet non minim deserunt. Adipisicing minim magna adipisicing sit et elit. Minim fugiat reprehenderit pariatur tempor irure tempor. Cupidatat incididunt labore nostrud amet deserunt aliqua esse commodo adipisicing est cupidatat.\r\nIncididunt quis cillum eiusmod excepteur ut magna nulla. Ipsum laborum labore incididunt Lorem eiusmod. Cillum irure non ut nisi et voluptate aliqua sit cupidatat. Amet voluptate ad cupidatat consequat incididunt minim in id sint irure nostrud nulla.\r\nNisi amet exercitation laboris ut fugiat laboris commodo et aliqua minim. Officia laborum ad ex proident aliquip mollit. Proident aliquip velit magna et cupidatat ullamco fugiat et deserunt labore consequat. Ex nostrud mollit incididunt qui excepteur.\r\n",
-      "dateSent": "2015-06-04T07:31:19 +04:00",
-      "tags": [
-        "Personal"
-      ],
-      "isUnread": true,
-      "isImportant": false,
-      "isDraft": true,
-      "isTrash": true
-    },
-    {
-      "_id": "5b1ff885787e08f33d3fd13e",
-      "index": 2,
-      "name": "Tracy Chavez",
-      "picture": "http://placehold.it/32x32",
-      "title": "reprehenderit enim laboris mollit aute quis eiusmod proident magna est",
-      "message": "Anim sit labore aliquip dolore ad reprehenderit. In non incididunt ut eiusmod amet aliqua dolor magna ut velit labore. Sit consequat id nostrud velit irure laborum sint esse eiusmod occaecat aute consequat labore. In consequat velit ex ea adipisicing incididunt qui nulla esse exercitation excepteur. Velit do aute amet consectetur in ut dolor ex. Enim ullamco cupidatat nisi et officia ut. Amet mollit magna laboris fugiat qui dolore fugiat.\r\nOccaecat proident ea cillum excepteur velit in anim labore. Tempor in tempor incididunt officia ex non ut culpa id consequat proident ipsum pariatur. Laboris consectetur anim sint eiusmod est ullamco esse officia dolor labore dolor. Incididunt labore in excepteur ex velit exercitation fugiat ullamco incididunt ex Lorem aute consectetur.\r\nOfficia sunt culpa ex enim magna officia exercitation nisi ad excepteur exercitation culpa tempor. Non dolore dolor exercitation ad pariatur eiusmod laboris sit et amet qui aliquip ullamco nostrud. Est fugiat velit culpa commodo dolor proident labore amet ex anim excepteur enim. Eu qui sit deserunt occaecat ipsum reprehenderit adipisicing mollit ullamco labore dolor aute. Do cupidatat ullamco est aute ea ad amet.\r\n",
-      "dateSent": "2018-03-16T03:39:11 +04:00",
-      "tags": [
-        "Work"
-      ],
-      "isUnread": false,
-      "isImportant": true,
-      "isDraft": true,
-      "isTrash": true
-    },
-    {
-      "_id": "5b1ff885b40559e8afbc034d",
-      "index": 3,
-      "name": "Sandy Franks",
-      "picture": "http://placehold.it/32x32",
-      "title": "nulla sit aute ex irure in magna ipsum in sit",
-      "message": "Labore consequat laborum reprehenderit aliquip duis aliquip laborum esse veniam veniam Lorem cillum. Laboris nisi dolor excepteur ad exercitation aliquip dolore magna deserunt. Voluptate sint Lorem mollit irure elit laborum.\r\nLorem sint commodo Lorem ea. Dolore sunt non ea proident ipsum esse quis reprehenderit tempor ut minim. Reprehenderit ut et aliquip ad incididunt et minim aliqua aliqua. Laboris exercitation laboris incididunt culpa incididunt ut labore ut eu enim occaecat veniam.\r\nOfficia adipisicing Lorem cillum commodo cillum non sit quis laborum. Irure ipsum velit elit cupidatat amet velit ex. Duis enim nisi ullamco ea adipisicing eiusmod Lorem enim magna aliquip incididunt ipsum. Velit tempor minim tempor cupidatat pariatur laboris veniam quis est anim. Cillum proident adipisicing Lorem laborum excepteur laborum commodo irure occaecat proident. Ex velit tempor eu labore labore non ad eu pariatur enim esse. Amet consequat ipsum esse velit in ex.\r\n",
-      "dateSent": "2016-06-07T12:54:01 +04:00",
-      "tags": [
-        "Travel"
-      ],
-      "isUnread": false,
-      "isImportant": true,
-      "isDraft": true,
-      "isTrash": false
-    },
-    {
-      "_id": "5b1ff885fdd4159edc342e72",
-      "index": 4,
-      "name": "Clarice Nolan",
-      "picture": "http://placehold.it/32x32",
-      "title": "veniam eu irure tempor duis anim pariatur elit eu eiusmod",
-      "message": "Ea sunt labore id excepteur consequat nostrud do ea aliqua aliqua eu pariatur occaecat. Minim cillum veniam non officia ipsum consequat amet fugiat excepteur aliqua. Occaecat id non pariatur labore duis sint nostrud.\r\nIncididunt pariatur excepteur laborum velit irure ea dolor amet. Labore elit adipisicing labore mollit veniam quis eiusmod culpa magna Lorem culpa tempor in sint. Sint magna culpa Lorem aute laboris proident non minim ad proident. Excepteur anim adipisicing duis culpa Lorem quis laborum nisi. Quis ex excepteur exercitation fugiat aliquip exercitation ipsum aliquip labore pariatur do.\r\nLorem consectetur irure elit elit reprehenderit non. Magna non nostrud esse ipsum in sint exercitation Lorem ex pariatur incididunt. Eu enim eiusmod nulla enim voluptate laborum esse.\r\n",
-      "dateSent": "2015-10-30T06:20:06 +04:00",
-      "tags": [
-        "Work"
-      ],
-      "isUnread": true,
-      "isImportant": false,
-      "isDraft": false,
-      "isTrash": false
-    },
-    {
-      "_id": "5b1ff8859ed410679d43fa94",
-      "index": 5,
-      "name": "Andrews Winters",
-      "picture": "http://placehold.it/32x32",
-      "title": "adipisicing nostrud ipsum amet reprehenderit consectetur velit Lorem consectetur non",
-      "message": "Voluptate exercitation aute cillum officia. Sunt et officia adipisicing reprehenderit ullamco do dolor duis eiusmod est. Fugiat amet exercitation deserunt minim cillum laboris laboris elit anim. Laborum ex ea do nulla laboris sunt est nulla commodo magna ipsum.\r\nCulpa voluptate eu sit adipisicing. Ad aliqua labore culpa irure aute aute reprehenderit. Commodo amet tempor qui amet laborum fugiat mollit culpa officia aute do duis aliquip aute. Irure ipsum cillum reprehenderit qui tempor velit Lorem cupidatat sunt enim nisi velit. Duis ea consequat officia velit pariatur non cillum laborum cillum id laborum laboris. Minim mollit commodo consequat deserunt laborum id tempor eiusmod reprehenderit duis aute. Irure tempor magna quis eiusmod ea occaecat amet labore ipsum cupidatat est consectetur.\r\nConsequat officia est ea do est ipsum culpa mollit incididunt commodo minim culpa amet. Proident qui culpa anim consectetur sit fugiat do nisi cupidatat reprehenderit adipisicing. Aute duis ipsum proident deserunt nisi minim ex tempor adipisicing.\r\n",
-      "dateSent": "2017-04-11T09:10:22 +04:00",
-      "tags": [
-        "Personal"
-      ],
-      "isUnread": false,
-      "isImportant": true,
-      "isDraft": true,
-      "isTrash": false
-    }
-  ]
-
-  module.exports = {
-    allTheThings: emails
+  {
+    _id: "5b203f39ebd0f472102d50a1",
+    index: 0,
+    name: "Lawanda Solis",
+    picture: "http://placehold.it/32x32",
+    title:
+      "fugiat adipisicing labore consectetur sunt laborum proident ea reprehenderit minim",
+    message:
+      "Ut adipisicing amet fugiat irure ullamco Lorem ut non velit consequat magna dolor. Ut nostrud est aliqua culpa ea deserunt veniam velit in qui occaecat anim occaecat. Amet do magna veniam adipisicing voluptate. Do cillum magna officia exercitation duis nostrud id quis reprehenderit consequat incididunt fugiat quis occaecat. Occaecat tempor id et anim reprehenderit. Eu anim sit enim dolor esse cupidatat id in.\r\nExcepteur adipisicing anim nulla eiusmod velit esse dolor duis. Aliquip nulla anim est veniam culpa eiusmod laboris dolor labore incididunt velit adipisicing esse deserunt. Laborum proident culpa ipsum in nisi dolor duis excepteur incididunt. Mollit voluptate aliqua commodo nisi dolore velit id laboris.\r\nAliqua adipisicing amet aliquip esse velit irure dolore cupidatat magna sunt. Commodo ullamco elit dolor dolor exercitation ut do. Consectetur do aute mollit cillum Lorem voluptate eiusmod magna velit pariatur. Nisi ex non reprehenderit laboris do.\r\n",
+    dateSent: "2014-08-03T02:25:50 +04:00",
+    tags: ["Travel"],
+    isUnread: true,
+    isImportant: false,
+    isDraft: true,
+    isTrash: false
+  },
+  {
+    _id: "5b203f39003fecd4a13c7b62",
+    index: 1,
+    name: "Gabriela Rhodes",
+    picture: "http://placehold.it/32x32",
+    title: "nisi ipsum labore minim eu aute culpa veniam consectetur ea",
+    message:
+      "Et officia commodo sint consequat labore duis sint velit tempor. Incididunt velit deserunt anim culpa culpa proident commodo quis amet dolore ipsum officia consectetur. Dolore tempor mollit qui pariatur aute. Laboris exercitation mollit mollit anim occaecat aute eiusmod consectetur nisi. Id exercitation exercitation duis Lorem mollit quis. Excepteur elit reprehenderit amet dolore officia pariatur consequat laboris voluptate cupidatat in.\r\nUllamco fugiat dolor elit labore deserunt reprehenderit esse anim cupidatat. Aliqua laboris anim aliqua quis deserunt officia nostrud enim mollit ea proident velit Lorem eu. Fugiat dolor minim deserunt ea nostrud elit ea non ut ullamco dolore irure occaecat eu. Eiusmod id esse et sint exercitation est reprehenderit. Pariatur laboris non aute incididunt dolore eu dolore exercitation laboris sint aliquip anim. Officia qui cupidatat commodo qui mollit velit aliqua ullamco duis occaecat anim magna dolore mollit.\r\nSunt esse consectetur eiusmod reprehenderit. Esse mollit consectetur pariatur occaecat id eu ipsum pariatur deserunt. Sit nisi dolore et laboris enim veniam. Incididunt incididunt anim consequat exercitation occaecat reprehenderit laborum magna excepteur exercitation ullamco et consectetur. Nostrud dolor ea tempor sunt laboris cupidatat ipsum irure anim incididunt. Qui mollit excepteur est consectetur. Consequat ipsum dolor minim amet est aliquip exercitation aliquip Lorem nisi ipsum nisi fugiat irure.\r\n",
+    dateSent: "2015-11-12T07:15:16 +05:00",
+    tags: ["Personal"],
+    isUnread: true,
+    isImportant: true,
+    isDraft: false,
+    isTrash: true
+  },
+  {
+    _id: "5b203f394e3ae040eea3c694",
+    index: 2,
+    name: "Kara Travis",
+    picture: "http://placehold.it/32x32",
+    title:
+      "consectetur est elit et culpa elit duis exercitation exercitation deserunt",
+    message:
+      "Nostrud laboris deserunt reprehenderit qui commodo anim nostrud ad amet eu excepteur esse. Duis reprehenderit et excepteur reprehenderit officia. Excepteur nostrud non officia voluptate eiusmod laboris consequat aute tempor nostrud anim cupidatat. Laboris culpa nulla eu consequat nostrud amet aliqua dolor voluptate dolor. Consequat esse dolore aliqua nostrud labore elit cupidatat aute ad. Consectetur minim nulla labore et aute.\r\nCommodo tempor tempor sunt officia id sint deserunt sit cupidatat pariatur. Amet et magna labore enim ex commodo. Ipsum sit non excepteur consequat id ullamco aliquip veniam in non. Dolore officia laborum nulla qui ut culpa eu ipsum eiusmod eiusmod magna. Dolore enim minim occaecat nisi sint anim reprehenderit eu commodo dolore cillum ut. Occaecat qui consectetur incididunt magna est irure enim. Et cillum pariatur consequat ullamco.\r\nDuis aliqua adipisicing anim incididunt dolor. Sint non anim sit ut. Dolor aliquip tempor minim minim reprehenderit quis duis minim.\r\n",
+    dateSent: "2014-06-11T09:44:53 +04:00",
+    tags: ["Travel"],
+    isUnread: true,
+    isImportant: true,
+    isDraft: false,
+    isTrash: false
+  },
+  {
+    _id: "5b203f3928cf7b6a8512be8b",
+    index: 3,
+    name: "Lynette Lang",
+    picture: "http://placehold.it/32x32",
+    title: "et nostrud ut ex consectetur dolor amet esse laboris reprehenderit",
+    message:
+      "Elit incididunt eu aliquip mollit non cillum veniam. Dolore occaecat reprehenderit id deserunt. Sint aute ut adipisicing anim dolor tempor ad.\r\nIncididunt cupidatat consequat adipisicing sit ut voluptate laborum mollit pariatur anim qui cupidatat occaecat ipsum. Minim minim labore aute cillum exercitation aliquip quis sunt non. Non ut et ullamco aliqua nostrud eu fugiat adipisicing ut magna cillum. Dolore sint commodo elit duis eiusmod exercitation officia laboris occaecat aliqua aliquip mollit ut.\r\nElit aliqua aliqua commodo officia occaecat culpa laborum qui pariatur ut. Quis dolore cupidatat dolor tempor duis Lorem aute pariatur eiusmod. Qui dolore duis elit proident aliqua.\r\n",
+    dateSent: "2018-03-19T10:37:02 +04:00",
+    tags: ["Travel"],
+    isUnread: true,
+    isImportant: true,
+    isDraft: true,
+    isTrash: false
+  },
+  {
+    _id: "5b203f39d08199fd66da7ee1",
+    index: 4,
+    name: "Patrick Hines",
+    picture: "http://placehold.it/32x32",
+    title: "tempor est officia irure aliquip esse labore dolore Lorem sit",
+    message:
+      "Do irure duis sunt veniam culpa Lorem. Laboris tempor laborum duis duis ut enim excepteur sint sint consequat. Labore nisi pariatur amet eiusmod id qui aliquip qui adipisicing pariatur sit nulla elit ut.\r\nExercitation ut amet qui officia laborum ipsum minim. Consequat ullamco officia voluptate ipsum officia veniam dolore eiusmod eiusmod. Nulla ipsum non eu voluptate deserunt officia ipsum consequat labore qui voluptate consequat excepteur proident. Eiusmod ex nostrud minim culpa consequat incididunt aliqua dolore consectetur.\r\nAd aliquip esse proident veniam qui id sint mollit laboris. Incididunt consectetur ullamco officia nulla excepteur et aliqua commodo non amet. Eu Lorem veniam ad ut qui amet incididunt aliquip et ex id. Pariatur deserunt sit nostrud consequat qui cupidatat. Duis laborum deserunt Lorem nulla cillum aute amet officia esse. Ea nulla voluptate exercitation elit consequat consectetur officia.\r\n",
+    dateSent: "2015-08-27T12:53:47 +04:00",
+    tags: ["Personal"],
+    isUnread: true,
+    isImportant: false,
+    isDraft: true,
+    isTrash: true
+  },
+  {
+    _id: "5b203f395bbe824f958aeb60",
+    index: 5,
+    name: "Millie Sanders",
+    picture: "http://placehold.it/32x32",
+    title:
+      "aliquip cillum est dolore magna commodo labore proident aliquip amet",
+    message:
+      "Aliqua magna est commodo ullamco in sit. Enim veniam do laboris elit. Consectetur duis incididunt commodo aute cillum irure et duis Lorem consectetur dolor. Minim ad amet consequat proident. Reprehenderit occaecat et amet nostrud et sunt culpa deserunt dolor id cillum.\r\nEx amet ullamco nostrud occaecat ipsum. Lorem nisi fugiat sunt Lorem excepteur aute magna id id quis voluptate esse. Aute ut sunt voluptate eu minim.\r\nEa esse fugiat labore ut dolor eu mollit. Eu quis cillum exercitation tempor veniam deserunt in cillum proident aliquip cupidatat deserunt veniam proident. Sint voluptate ut deserunt aute.\r\n",
+    dateSent: "2016-05-07T04:44:44 +04:00",
+    tags: ["Travel"],
+    isUnread: true,
+    isImportant: true,
+    isDraft: false,
+    isTrash: true
+  },
+  {
+    _id: "5b203f398123f0b5ce06726b",
+    index: 6,
+    name: "Conway Emerson",
+    picture: "http://placehold.it/32x32",
+    title: "id in cillum ex quis cillum mollit esse excepteur dolore",
+    message:
+      "Consequat ullamco magna fugiat aliqua commodo duis in aliqua. Occaecat in culpa exercitation et culpa deserunt sit tempor aliquip. Duis cupidatat magna minim id ea sint incididunt laboris eiusmod amet ullamco tempor non. Deserunt in ut sit exercitation aliquip proident consectetur occaecat quis. Labore consectetur do aliqua ad laborum anim id minim officia elit aliqua velit.\r\nSint aute aute reprehenderit voluptate dolor cupidatat. Nulla magna anim commodo mollit anim anim mollit magna. Fugiat est officia ex irure pariatur. Aliqua ea culpa ut nulla aliquip quis.\r\nCulpa ullamco exercitation proident eu tempor enim tempor aliquip qui excepteur aliquip. Veniam ea esse sunt est ex elit incididunt elit aute consequat officia. Amet ullamco ex anim laboris. Laboris id consectetur adipisicing eiusmod laborum et adipisicing commodo amet mollit. Magna officia tempor proident amet do sunt ad. Amet id laboris aliquip quis voluptate eiusmod dolor pariatur enim magna nostrud sint.\r\n",
+    dateSent: "2017-01-22T07:28:45 +05:00",
+    tags: ["Personal"],
+    isUnread: false,
+    isImportant: false,
+    isDraft: true,
+    isTrash: false
+  },
+  {
+    _id: "5b203f39c44e0101bf696e98",
+    index: 7,
+    name: "Duffy Johnston",
+    picture: "http://placehold.it/32x32",
+    title: "sunt eiusmod est deserunt labore aute cupidatat et enim culpa",
+    message:
+      "Enim qui anim eiusmod consequat dolore consequat et sunt laborum magna anim ut nostrud. Elit eiusmod do amet aliqua ut dolore minim voluptate commodo dolor sunt. Sint enim velit reprehenderit voluptate proident laborum ex reprehenderit eiusmod aute. Consectetur anim dolor excepteur quis est ullamco. Dolore esse minim aliqua commodo ullamco quis. Qui officia dolor minim occaecat qui.\r\nLorem minim non minim incididunt incididunt dolore enim nisi esse quis et non. Sint fugiat amet qui ipsum non ea cillum consectetur eiusmod amet. Amet occaecat id eiusmod voluptate sint anim commodo fugiat cillum velit do aute qui excepteur. Sit reprehenderit ex ea commodo nulla deserunt. Elit aute excepteur ullamco pariatur Lorem enim aute. Consequat aute deserunt amet cupidatat deserunt mollit Lorem exercitation. Incididunt nostrud eiusmod ipsum irure consequat duis ipsum deserunt ex qui elit officia exercitation amet.\r\nCupidatat culpa minim non irure officia adipisicing enim ea elit deserunt magna exercitation ullamco. Dolore excepteur sit nostrud exercitation magna magna pariatur in ullamco. Ipsum qui laborum mollit deserunt id labore ad quis proident incididunt laboris cillum cupidatat commodo.\r\n",
+    dateSent: "2015-10-04T03:06:45 +04:00",
+    tags: ["Personal"],
+    isUnread: true,
+    isImportant: true,
+    isDraft: true,
+    isTrash: true
+  },
+  {
+    _id: "5b203f3996d1a98c10fbe24f",
+    index: 8,
+    name: "Meghan Browning",
+    picture: "http://placehold.it/32x32",
+    title: "ea incididunt officia dolor ex nulla proident cillum aute eu",
+    message:
+      "Sint reprehenderit do anim officia nisi dolore ut cupidatat. Aute esse nostrud labore sint adipisicing. Est est adipisicing ea id laborum cupidatat laboris non occaecat cupidatat do duis. Velit proident ipsum enim est enim veniam consequat dolor ipsum amet culpa irure.\r\nVoluptate magna laborum minim elit cillum ea cillum officia quis voluptate. Incididunt aliqua aliquip et enim exercitation pariatur eiusmod nostrud. Commodo ad voluptate reprehenderit minim enim ex magna ea tempor minim occaecat magna laboris. Elit sunt quis labore occaecat irure id cupidatat. Proident voluptate minim sit cillum do fugiat fugiat. Quis aute aliquip do sit. Sunt veniam et Lorem aliqua officia officia.\r\nVeniam mollit magna ea aliquip enim id in ex duis eiusmod exercitation enim. Consequat ut ex commodo incididunt dolore aute. Eiusmod adipisicing occaecat qui dolor in laboris dolore. Irure excepteur occaecat Lorem incididunt nisi ut reprehenderit velit dolor id aliqua incididunt. Do laborum id excepteur dolore ea consequat laboris cillum. Irure et ad aute sunt duis esse irure non in aliqua enim sunt proident. Eiusmod ad aliquip et velit do.\r\n",
+    dateSent: "2015-06-11T09:56:30 +04:00",
+    tags: ["Work"],
+    isUnread: false,
+    isImportant: false,
+    isDraft: true,
+    isTrash: true
   }
+];
+
+module.exports = {
+  allTheThings: emails
+};
