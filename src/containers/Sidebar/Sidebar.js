@@ -15,7 +15,7 @@ class Sidebar extends Component {
                     color="blue"
                 />
                 <ul className="text-white bold">
-                    <li>Inbox</li>
+                    <li>Inbox ({this.props.numberUnReadEmails})</li>
                     <li>Important</li>
                     <li>Sent</li>
                     <li>Draft</li>

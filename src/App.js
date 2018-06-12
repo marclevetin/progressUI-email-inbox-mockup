@@ -27,11 +27,14 @@ class App extends Component {
 
   render() {
     const showEmailDetail = (this.state.activeEmailId) ? this.state.data.filter(email => email._id === this.state.activeEmailId)[0] : '';
+    const numberUnReadEmails = this.state.data.filter(email => email.isUnread).length
 
     return (
       <div className="grid-half">
         <div className="row">
-          <Sidebar />
+          <Sidebar 
+            numberUnReadEmails={numberUnReadEmails}
+          />
           <EmailList 
             emails={this.state.data}
             handleClick={this.handleClick}
