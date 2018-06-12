@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import './progress.min.css';
 
 import Sidebar from './containers/Sidebar';
+import EmailList from './containers/EmailList';
+import EmailDetail from './containers/EmailDetail';
 
 
 class App extends Component {
@@ -10,9 +11,8 @@ class App extends Component {
       <div className="grid-half">
         <div className="row">
           <Sidebar />
-          <div className="col-md-3"><p>Email list</p></div>
-          
-          <div className="col-md-8"><p>Email detail</p></div>
+          <EmailList />
+          <EmailDetail />
         </div>
       </div>
     );
