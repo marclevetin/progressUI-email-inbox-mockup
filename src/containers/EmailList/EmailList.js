@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
+import './EmailList.css';
 
 import EmailSummary from '../../components/EmailSummary';
-import EmailDetail from '../EmailDetail';
+
 
 
 class EmailList extends Component {
@@ -14,7 +15,14 @@ class EmailList extends Component {
         const {value} = event.target;
         this.setState({
             searchTerm: value
-        })
+        });
+    }
+
+    clearSearch = () => {
+        this.setState({
+            activeEmail: '',
+            searchTerm: ''
+        });
     }
 
     render () {
@@ -33,11 +41,15 @@ class EmailList extends Component {
                         activeEmail={this.props.activeEmail}
                     />
                 ) 
-                : "No messages match this filter."
+                : <EmailSummary 
+                    title="No messages match this filter."
+                    preheader="Please change your search terms.  Click anywhere to clear the field."
+                    handleClick={this.clearSearch}
+                  />
 
         return(
             <div className="col-md-3">
-                <input type="text" onChange={this.handleChange} placeholder="Filter your email title"/>
+                <input type="text" onChange={this.handleChange} placeholder="Filter by email title" className="input" value={this.state.searchTerm}/>
                 {allEmailSummaries}
             </div>
         )
