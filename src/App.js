@@ -14,7 +14,8 @@ class App extends Component {
 
   componentDidMount() {
     this.setState({
-      data: allTheThings
+      data: allTheThings,
+      activeEmailId: allTheThings[0]._id
     })
   }
 
@@ -27,7 +28,7 @@ class App extends Component {
 
   render() {
     const showEmailDetail = (this.state.activeEmailId) ? this.state.data.filter(email => email._id === this.state.activeEmailId)[0] : '';
-    const numberUnReadEmails = this.state.data.filter(email => email.isUnread).length
+    const numberUnReadEmails = this.state.data.filter(email => email.isUnread).length;
 
     return (
       <div className="grid-half">

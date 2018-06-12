@@ -19,8 +19,8 @@ A quick solution bootstrapped with Create React App.  This project is not curren
 ## Known issues as of June 12:
 - Avatar in email has a border radius of 50% instead of the overridden 2px.  Not sure why.  Need to investigate.
 - Email List is expanding beyond the page.
-- Need "no data" states for all pages.
 - Labels are missing color blocks.
 - Width of dark sidebar is incorrect.
 - Images aren't floating correctly in Email Details
 - When an unread email is clicked, the status doesn't change.
+- When "no results" for Search appears, the UI should have a more prominent indicator of failure.
