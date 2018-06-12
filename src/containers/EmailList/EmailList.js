@@ -48,7 +48,7 @@ class EmailList extends Component {
                   />
 
         return(
-            <div className="col-md-3">
+            <div className="col-md-3 fix-height">
                 <input type="text" onChange={this.handleChange} placeholder="Filter by email title" className="input" value={this.state.searchTerm}/>
                 {allEmailSummaries}
             </div>

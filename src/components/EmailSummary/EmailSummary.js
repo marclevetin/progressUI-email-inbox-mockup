@@ -13,9 +13,7 @@ const EmailSummary = props => {
         onClick={() => props.handleClick(props.id)}
         style={backgroundColor}
       >
-        <span className="user-icon avatar email-avatar">
-          <img src={props.avatar} />
-        </span>
+        <img className="user-icon avatar email-avatar" src={props.avatar} /> 
         <div className="page-title-group">
           <h3 className="page-title-sub">{props.sender}</h3>
           <h5 className="page-title text-base">{props.title}</h5>
