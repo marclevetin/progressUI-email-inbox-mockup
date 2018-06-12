@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import './App.css';
+
+import Sidebar from './containers/Sidebar';
+
 
 class App extends Component {
   render() {
     return (
       <div>
-        <p>Sidebar</p>
+        <Sidebar />
         <p>Email list</p>
         <p>Email detail</p>
       </div>
