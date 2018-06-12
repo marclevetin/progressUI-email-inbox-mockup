@@ -27,7 +27,7 @@ class App extends Component {
 
   render() {
     const showEmailDetail = (this.state.activeEmailId) ? this.state.data.filter(email => email._id === this.state.activeEmailId)[0] : '';
-    console.log(showEmailDetail)
+
     return (
       <div className="grid-half">
         <div className="row">

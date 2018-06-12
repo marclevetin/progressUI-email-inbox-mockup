@@ -20,7 +20,6 @@ const EmailSummary = props => {
           <h3 className="page-title-sub">{props.sender}</h3>
           <h5 className="page-title text-base">{props.title}</h5>
           <p>{props.preheader}</p>
-          <p>background if active, uses #e9ecef</p>
         </div>
       </div>
     </React.Fragment>
