@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import PillButton from '../../components/PillButton';
+
 class Sidebar extends Component {
     state = {
 
@@ -8,7 +10,9 @@ class Sidebar extends Component {
     render () {
         return(
             <div className="col-md-1">
-                <p>Compose button</p>
+                <PillButton 
+                    text="Compose"
+                />
                 
                 <ul>
                     <li>Inbox</li>

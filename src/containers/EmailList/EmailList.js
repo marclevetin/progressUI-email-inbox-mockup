@@ -1,5 +1,9 @@
 import React, {Component} from 'react';
 
+import EmailSummary from '../../components/EmailSummary';
+
+
+
 class EmailList extends Component {
     state = {
 
@@ -8,7 +12,12 @@ class EmailList extends Component {
     render () {
         return(
             <div className="col-md-3">
-                This is the email list
+                <EmailSummary
+                    sender="Sender Name"
+                    title="Email Title"
+                    unread={true}
+                    preheader="Email preheader text"
+                />
             </div>
         )
     }
