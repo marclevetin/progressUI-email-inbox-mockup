@@ -15,7 +15,7 @@ class EmailDetail extends Component {
                 <div class="page-title-group">
                   <h5 class="page-title">Page Title</h5>
                   <p>
-                    From <a>Tio Mitra</a> at Time stamp
+                    From <a>Tio Mitra</a> at <span className="text-gray5">Timestamp</span>
                   </p>
                 </div>
               </div>
