@@ -41,7 +41,7 @@ class App extends Component {
             activeEmail={this.state.activeEmailId}
             title={showEmailDetail.title}
             sender={showEmailDetail.name}
-            timestamp={showEmailDetail.datesent}
+            timestamp={showEmailDetail.dateSent}
             message={showEmailDetail.message}
           />
         </div>
