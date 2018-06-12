@@ -1,4 +1,4 @@
-[
+const emails = [
     {
       "_id": "5b1ff885577a83f4d2123f0c",
       "index": 0,
@@ -96,3 +96,7 @@
       "isTrash": false
     }
   ]
+
+  module.exports = {
+    allTheThings: emails
+  }

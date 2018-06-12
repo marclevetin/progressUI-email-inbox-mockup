@@ -7,15 +7,15 @@ class EmailDetail extends Component {
 
   render() {
     return (
-      <div className="col-md-8">
-        <div class="page-title-container">
+      <div className="col-md-7">
+        <div className="page-title-container">
           <div className="grid-half">
             <div className="row no-padding">
               <div className="col-md-8">
-                <div class="page-title-group">
-                  <h5 class="page-title">Page Title</h5>
+                <div className="page-title-group">
+                  <h5 className="page-title">{this.props.title}</h5>
                   <p>
-                    From <a>Tio Mitra</a> at <span className="text-gray5">Timestamp</span>
+                    From <a>{this.props.sender}</a> at <span className="text-gray5">{this.props.timestamp}</span>
                   </p>
                 </div>
               </div>
@@ -28,7 +28,7 @@ class EmailDetail extends Component {
           </div>
         </div>
         <hr />
-        <p>Bacon ipsum text</p>
+        <p>{this.props.message}</p>
       </div>
     );
   }
