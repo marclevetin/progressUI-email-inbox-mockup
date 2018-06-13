@@ -8,7 +8,6 @@ class EmailDetail extends Component {
   state = {};
 
   render() {
-    debugger;
     const formattedDateTime = (this.props.timestamp) 
           ? moment(this.props.timestamp.split(" ")[0], moment.ISO_8601).format("h:mma, MMMM D, YYYY")
           : '';

@@ -27,7 +27,7 @@ class EmailList extends Component {
 
     render () {
         const filteredEmails = this.props.emails.filter(email => email.title.includes(this.state.searchTerm))
-        const allEmailSummaries = (filteredEmails.length != 0)
+        const allEmailSummaries = (filteredEmails.length !== 0)
                 ? filteredEmails.map(email => 
                     <EmailSummary
                         key={email._id}

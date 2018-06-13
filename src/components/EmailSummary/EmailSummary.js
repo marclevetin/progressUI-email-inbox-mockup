@@ -3,7 +3,6 @@ import React from "react";
 import "./EmailSummary.css";
 
 const EmailSummary = props => {
-
   const backgroundColor = (props.activeEmail === props.id) ? {'backgroundColor': '#e9ecef'} : {'backgroundColor': '#ffffff'};
 
   return (
@@ -13,7 +12,7 @@ const EmailSummary = props => {
         onClick={() => props.handleClick(props.id)}
         style={backgroundColor}
       >
-        <img className="user-icon avatar email-avatar" src={props.avatar} /> 
+        <img className="user-icon avatar email-avatar" src={props.avatar} alt={`Avatar for ${props.sender}`}/> 
         <div className="page-title-group">
           <h3 className="page-title-sub">{props.sender}</h3>
           <h5 className="page-title text-base">{props.title}</h5>
