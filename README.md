@@ -17,11 +17,8 @@ A quick solution bootstrapped with Create React App.  This project is not curren
 
 
 ## Known issues as of June 12:
-- Avatar in email has a border radius of 50% instead of the overridden 2px.  Not sure why.  Need to investigate.
 - Labels are missing color blocks.
 - Width of dark sidebar is incorrect.
 - Images aren't floating correctly in Email Details
 - When an unread email is clicked, the status doesn't change.
 - When "no results" for Search appears, the UI should have a more prominent indicator of failure.
-- Top margin of Email Detail is incorrect.
-- Timestamp is in wrong format.
