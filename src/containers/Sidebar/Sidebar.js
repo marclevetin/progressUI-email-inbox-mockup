@@ -1,35 +1,54 @@
-import React, {Component} from 'react';
-import './Sidebar.css';
-import PillButton from '../../components/PillButton';
+import React, { Component } from "react";
+import "./Sidebar.css";
+import PillButton from "../../components/PillButton";
 
 class Sidebar extends Component {
-    state = {
+  state = {};
 
-    }
-
-    render () {
-        return(
-            <div className="col-md-2 bg-gray8 sidebar">
-                <PillButton 
-                    text="Compose"
-                    color="blue"
-                />
-                <ul className="text-white bold">
-                    <li>Inbox ({this.props.numberUnReadEmails})</li>
-                    <li>Important</li>
-                    <li>Sent</li>
-                    <li>Draft</li>
-                    <li>Trash</li>
-                </ul>
-                <h3 className="text-blue9 text-lg">LABELS</h3>
-                <ul className="text-white bold">
-                    <li>Personal</li>
-                    <li>Work</li>
-                    <li>Travel</li>
-                </ul>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <React.Fragment>
+        <div className="col-md-2 bg-gray8 sidebar hidden-sm">
+          <PillButton text="Compose" color="blue" />
+          <p className="text-white bold">
+            Inbox ({this.props.numberUnReadEmails})
+          </p>
+          <p className="text-white bold">Important</p>
+          <p className="text-white bold">Sent</p>
+          <p className="text-white bold">Draft</p>
+          <p className="text-white bold">Trash</p>
+          <h3 className="text-blue9 text-lg">LABELS</h3>
+          <ul>
+            <li className="text-white bold">Personal</li>
+            <li className="text-white bold">Work</li>
+            <li className="text-white bold">Travel</li>
+          </ul>
+        </div>
+        <div className="bg-gray8 show-xs show-sm hidden-md hidden-lg">
+          <button class="btn btn-gray btn-full btn-dropdown">
+            Select a Mailbox
+            <ul className="dropdown-menu left">
+              <li>
+                <a href="#">Inbox ({this.props.numberUnReadEmails})</a>
+              </li>
+              <li>
+                <a href="#">Important</a>
+              </li>
+              <li>
+                <a href="#">Sent</a>
+              </li>
+              <li>
+                <a href="#">Draft</a>
+              </li>
+              <li>
+                <a href="#">Trash</a>
+              </li>
+            </ul>
+          </button>
+        </div>
+      </React.Fragment>
+    );
+  }
 }
 
 export default Sidebar;
