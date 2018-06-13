@@ -23,5 +23,4 @@ A quick solution bootstrapped with Create React App.  This project is not curren
 - Images aren't floating correctly in Email Details
 - When an unread email is clicked, the status doesn't change.
 - When "no results" for Search appears, the UI should have a more prominent indicator of failure.
-- Top margin of Email Detail is incorrect.
 - Timestamp is in wrong format.
