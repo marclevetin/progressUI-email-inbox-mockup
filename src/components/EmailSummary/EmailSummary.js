@@ -3,20 +3,17 @@ import React from "react";
 import "./EmailSummary.css";
 
 const EmailSummary = props => {
-  const backgroundColor =
-    props.activeEmail === props.id
-      ? { backgroundColor: "#e9ecef" }
-      : { backgroundColor: "#ffffff" };
-  const unReadBorder = props.unread
-    ? { "border-left": "5px solid #72c3fc" }
-    : { "border-left": "0px solid #72c3fc" };
+    const computedStyles = {
+      backgroundColor: (props.activeEmail === props.id) ? "#e9ecef" : "#ffffff",
+      borderLeft: (props.unread) ? "5px solid #72c3fc" : "0px solid #72c3fc"
+    }
 
   return (
     <React.Fragment>
       <div
         className="page-title-container email"
         onClick={() => props.handleClick(props.id)}
-        style={backgroundColor}
+        style={computedStyles}
       >
         <div className="page-title-group">
           <div>
