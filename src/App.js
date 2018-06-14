@@ -31,7 +31,7 @@ class App extends Component {
     const numberUnReadEmails = this.state.data.filter(email => email.isUnread).length;
 
     return (
-      <div className="grid-half">
+      <div className="grid-full">
         <div className="row">
           <Sidebar 
             numberUnReadEmails={numberUnReadEmails}
