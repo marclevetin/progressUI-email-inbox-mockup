@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './EmailList.css';
 
 import EmailSummary from '../../components/EmailSummary';
+import NoEmails from '../../components/NoEmails';
 
 
 
@@ -46,9 +47,9 @@ class EmailList extends Component {
                         activeEmail={this.props.activeEmail}
                     />
                 ) 
-                : <EmailSummary 
+                : <NoEmails 
                     title="No messages match this filter."
-                    preheader="Please change your search terms.  Click anywhere to clear the field."
+                    preheader="Please change your search criteria."
                     handleClick={this.clearSearch}
                   />
 
