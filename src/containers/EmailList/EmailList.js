@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './EmailList.css';
 
 import EmailSummary from '../../components/EmailSummary';
+import NoEmails from '../../components/NoEmails';
 
 
 
@@ -13,6 +14,7 @@ class EmailList extends Component {
 
     handleChange = (event) => {
         const {value} = event.target;
+        
         this.setState({
             searchTerm: value
         });
@@ -26,7 +28,11 @@ class EmailList extends Component {
     }
 
     render () {
-        const filteredEmails = this.props.emails.filter(email => email.title.includes(this.state.searchTerm))
+        const filteredEmails = this.props.emails.filter(email => email.title.toLowerCase().includes(this.state.searchTerm.toLowerCase()) 
+                                                                || email.name.toLowerCase().includes(this.state.searchTerm.toLowerCase())
+                                                                || email.message.toLowerCase().includes(this.state.searchTerm.toLowerCase())
+                                                        )
+
         const allEmailSummaries = (filteredEmails.length !== 0)
                 ? filteredEmails.map(email => 
                     <EmailSummary
@@ -41,15 +47,21 @@ class EmailList extends Component {
                         activeEmail={this.props.activeEmail}
                     />
                 ) 
-                : <EmailSummary 
+                : <NoEmails 
                     title="No messages match this filter."
-                    preheader="Please change your search terms.  Click anywhere to clear the field."
+                    preheader="Please change your search criteria."
                     handleClick={this.clearSearch}
                   />
 
         return(
             <div className="col-md-3 fix-height">
-                <input type="text" onChange={this.handleChange} placeholder="Filter by email title" className="input" value={this.state.searchTerm}/>
+            <ul class="input-list">
+                <li class="input-unit">
+                    <div class="input-control">
+                        <input className="input-element input-element-base" type="text" onChange={this.handleChange} placeholder="Filter by email title, subject, or body" aria-label="Email list filter" value={this.state.searchTerm}/>
+                    </div>
+                </li>
+            </ul>
                 {allEmailSummaries}
             </div>
         )
