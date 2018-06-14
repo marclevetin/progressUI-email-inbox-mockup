@@ -9,20 +9,21 @@ class Sidebar extends Component {
     return (
       <React.Fragment>
         <div className="col-md-2 bg-gray8 sidebar hidden-sm">
+        <div className="padding-top-lg padding-bottom-lg">
           <PillButton text="Compose" color="blue" />
+        </div>
           <p className="text-white bold">
-            Inbox ({this.props.numberUnReadEmails})
+            Inbox <span className="text-blue9">({this.props.numberUnReadEmails})</span>
           </p>
           <p className="text-white bold">Important</p>
           <p className="text-white bold">Sent</p>
           <p className="text-white bold">Draft</p>
           <p className="text-white bold">Trash</p>
           <h3 className="text-blue9 text-lg">LABELS</h3>
-          <ul>
-            <li className="text-white bold">Personal</li>
-            <li className="text-white bold">Work</li>
-            <li className="text-white bold">Travel</li>
-          </ul>
+          
+            <p className="text-white bold"><span className='color-well bg-yellow3'></span>Personal</p>
+            <p className="text-white bold"><span className='color-well bg-cyan3'></span>Work</p>
+            <p className="text-white bold"><span className='color-well bg-green3'></span>Travel</p>
         </div>
         <div className="bg-gray8 show-xs show-sm hidden-md hidden-lg">
           <button class="btn btn-gray btn-full btn-dropdown">

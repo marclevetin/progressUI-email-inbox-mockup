@@ -54,7 +54,7 @@ class EmailList extends Component {
                   />
 
         return(
-            <div className="col-md-3 fix-height">
+            <div className="col-md-6 fix-height">
             <ul class="input-list">
                 <li class="input-unit">
                     <div class="input-control">

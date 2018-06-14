@@ -13,7 +13,7 @@ class EmailDetail extends Component {
           : '';
     
     return (
-      <div className="col-md-7">
+      <div className="col-md-16">
         <div className="page-title-container container-adjust">
           <div className="grid-half">
             <div className="row no-padding">

@@ -3,3 +3,15 @@
     margin-right: 0 !important;
     padding: 10px;
 }
+
+span.color-well {
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    border-radius: 2px;
+    margin-right: 8px;
+}
+
+div.padding-bottom-lg {
+    padding-bottom: 18px;
+}
