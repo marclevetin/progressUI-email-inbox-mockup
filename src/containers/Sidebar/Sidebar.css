@@ -11,3 +11,7 @@ span.color-well {
     border-radius: 2px;
     margin-right: 8px;
 }
+
+div.padding-bottom-lg {
+    padding-bottom: 18px;
+}

@@ -14,9 +14,3 @@ A quick solution bootstrapped with Create React App.  This project is not curren
 2)  `yarn install` will load all dependencies.
 3)  `yarn start` will fire up a server.
 4)  Navigate to `localhost:3000` if a browser didn't open automatically.
-
-
-## Known issues as of June 12:
-- Labels are missing color blocks.
-- Width of dark sidebar is incorrect.
-- When an unread email is clicked, the status doesn't change.
