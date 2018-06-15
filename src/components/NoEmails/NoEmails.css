@@ -1,16 +1,13 @@
 .email {
-    border: 1px solid #dee2e6;
-    padding: 15px;
-}
+  border: 1px solid #dee2e6;
+  padding: 15px; }
 
 .email-avatar {
-    float: left;
-    margin-right: 10px;
-    border-radius: 2px !important;
-    margin-bottom: 80px;
-}
+  float: left;
+  margin-right: 10px;
+  border-radius: 2px !important;
+  margin-bottom: 80px; }
 
 .sender {
-    text-transform: uppercase;
-    letter-spacing: -1px;
-}
+  text-transform: uppercase;
+  letter-spacing: -1px; }
