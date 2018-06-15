@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './progress.min.css';
+import './styles/progress.min.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
